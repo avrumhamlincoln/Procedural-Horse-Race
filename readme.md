@@ -5,75 +5,33 @@ isWinner()
 
 main(){
 
-a = 0
-b = 0
-c = 0
-d = 0
-e = 0
+horses = [0, 0, 0, 0, 0]
+keepGoing = true
 
-while isWinner == FALSE:
-    advance()
-    printLane()
+while keep going = true:
+    for i in horses:
+        advance()
+        printLane()
+        if isWinner = true:
+            print("Horse ___ Wins!")
+            keepGoing = false
 
 }
 
 advance(){
-
-press enter to flip coin
-
-flip coin
-if coin = heads:
-    a ++
-
-flip coin
-if coin = heads:
-    b ++
-
-flip coin
-if coin = heads:
-    c ++
-
-flip coin
-if coin = heads:
-    d ++
-
-flip coin
-if coin = heads:
-    e ++
+for i in horses:
+    flip coin
+    if heads:
+        i++
 
 }
 
 printLane(){
+for i in horses:
+    for 15 times:
+        if horseNumber = j:
+            print ("horseNumber")
+        else:
+            print (".")
 
-width = 15
-
-for i in width:
-    if a = i:
-        print "0"
-    else:
-        print "."
-
-for i in width:
-    if b = i:
-        print "1"
-    else:
-        print "."
-
-for i in width:
-    if c = i:
-        print "2"
-    else:
-        print "."
-
-for i in width:
-    if d = i:
-        print "3"
-    else:
-        print "."
-
-for i in width:
-    if e = i:
-        print "4"
-    else:
-        print "."
 }
