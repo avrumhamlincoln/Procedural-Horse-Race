@@ -5,10 +5,14 @@ void advance(int horseNum, int* horses);
 void printLane(int horseNum, int* horses);
 bool isWinner(int horseNum, int* horses);
 
+const int NUM_HORSES = 5;
+const int TRACK_LENGTH = 15;
+
+
 std::random_device rd;
 std::uniform_int_distribution<int> dist(0, 1);
 
-coin = dist(rd);
+int coin = dist(rd);
 
 int main(){
 	int horses[] = {0, 0, 0, 0, 0};
@@ -28,13 +32,17 @@ int main(){
 }
 
 void advance(int horseNum, int* horses){
-	for(int i = 0; i < 5; i++){
-		if (coin  == 1){
-			// I am stuck on how to get this working
-		}
-	}
+	int coint = rand() % 2;
+	horses[horseNum] += coin;
 }
 
 void printLane(int horseNum, int* horses){
-
+	for (int i = 0; i < TRACK_LENGTH;, i++){
+		if (i == horses[horseNum]){
+			std::cout << horseNum;
+		}
+		else{
+			std::cout << "."
+		}
+	}
 }
