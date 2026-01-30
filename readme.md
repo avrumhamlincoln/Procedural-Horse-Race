@@ -35,3 +35,8 @@ for i in horses:
             print (".")
 
 }
+
+bool isWinner(){
+    if horse position = 15:
+        isWinner = true
+}
